@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
 }
+button {
+  border: none;
+}
 @font-face {
   font-family: "norse";
   src: url(./fonts/Norsebold.otf);
-  font-size: 4rem;
 }
 
 .wrapper {
@@ -16,7 +18,7 @@
 
 .logo {
   display: flex;
-  width: 30%;
+  width: 40%;
   position: relative;
 }
 
@@ -39,12 +41,83 @@
   font-family: "norse";
   font-size: 6rem;
 }
+
 .odinimg {
   height: 120px;
   width: auto;
 }
+
 .content {
   width: 70%;
   display: flex;
   flex-direction: column;
+  padding-top: 120px;
+  padding-left: 20px;
+}
+
+.about {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.italic-text {
+  font-style: italic;
+}
+
+.form-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-body {
+  border: none;
+  margin-right: 220px;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4d9d9;
+}
+
+.form-heading {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 250px;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+}
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 4px 6px -1px;
+}
+
+#password:user-invalid {
+  border: 1px solid red;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #596d48;
+  padding: 8px 30px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
 }
